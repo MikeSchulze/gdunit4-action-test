@@ -20,6 +20,4 @@ jobs:
         godot-status: 'stable'
         paths: 'res://test'
         report-name: 'test-result.xml'
-        godot-net: true
-        upload-report: false
         project_dir: ./src/

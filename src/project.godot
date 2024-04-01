@@ -11,25 +11,18 @@ config_version=5
 [application]
 
 config/name="gdUnit-no-preloading-example"
-config/features=PackedStringArray("4.2", "C#", "Mobile")
+config/features=PackedStringArray("4.2", "Mobile")
 config/icon="res://icon.svg"
 
 [autoload]
 
 Audio="*res://audio.gd"
 
-[dotnet]
-
-project/assembly_name="gdUnit-no-preloading-example"
-
 
 [gdunit4]
 
 ui/toolbar/run_overall=true
 
-;[internationalization]
-
-;locale/translations=PackedStringArray("res://i18n/strings.en.translation")
 
 [rendering]
 
