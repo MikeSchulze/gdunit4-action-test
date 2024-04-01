@@ -22,9 +22,6 @@ Audio="*res://audio.gd"
 
 project/assembly_name="gdUnit-no-preloading-example"
 
-[editor_plugins]
-
-enabled=PackedStringArray("res://addons/gdUnit4/plugin.cfg")
 
 [gdunit4]
 
