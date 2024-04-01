@@ -19,10 +19,15 @@ config/icon="res://icon.svg"
 Audio="*res://audio.gd"
 
 
+
+
 [gdunit4]
 
 ui/toolbar/run_overall=true
 
+[internationalization]
+
+locale/translations=PackedStringArray("res://i18n/strings.en.translation")
 
 [rendering]
 
