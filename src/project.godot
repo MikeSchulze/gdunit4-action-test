@@ -1,0 +1,39 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="gdUnit-no-preloading-example"
+config/features=PackedStringArray("4.2", "C#", "Mobile")
+config/icon="res://icon.svg"
+
+[autoload]
+
+Audio="*res://audio.gd"
+
+[dotnet]
+
+project/assembly_name="gdUnit-no-preloading-example"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/gdUnit4/plugin.cfg")
+
+[gdunit4]
+
+ui/toolbar/run_overall=true
+
+[internationalization]
+
+locale/translations=PackedStringArray("res://i18n/strings.en.translation")
+
+[rendering]
+
+renderer/rendering_method="mobile"
