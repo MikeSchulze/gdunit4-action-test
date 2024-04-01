@@ -25,9 +25,9 @@ Audio="*res://audio.gd"
 
 ui/toolbar/run_overall=true
 
-[internationalization]
+;[internationalization]
 
-locale/translations=PackedStringArray("res://i18n/strings.en.translation")
+;locale/translations=PackedStringArray("res://i18n/strings.en.translation")
 
 [rendering]
 
