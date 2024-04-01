@@ -1,0 +1,26 @@
+name: Test Godot Project
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        lfs: true
+
+    - uses: MikeSchulze/gdUnit4-action@v1.0.5
+      with:
+        godot-version: '4.2.1'
+        godot-status: 'stable'
+        paths: 'res://test'
+        report-name: 'test-result.xml'
+        version: 'installed'
+        godot-net: true
+        upload-report: false
+        project_dir: ./src/
