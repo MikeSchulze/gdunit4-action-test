@@ -7,17 +7,17 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     steps:
     - uses: actions/checkout@v4
       with:
         lfs: true
 
-    - uses: MikeSchulze/gdUnit4-action@v1.0.5
+    - uses: MikeSchulze/gdUnit4-action@v1.1.1
       with:
-        godot-version: '4.2.1'
-        godot-status: 'stable'
+        godot-version: '4.2.2'
         paths: 'res://test'
-        report-name: 'test-result.xml'
+        upload-report: false
+        publish-report: false
         project_dir: ./src/
